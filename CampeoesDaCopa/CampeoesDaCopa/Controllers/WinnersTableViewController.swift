@@ -21,7 +21,7 @@ class WinnersTableViewController: UITableViewController {
         let fileURL = Bundle.main.url(forResource: "winners.json", withExtension: nil)!
         let jsonData = try! Data(contentsOf: fileURL)
         do {
-            worldCups = try JSONDecoder().decode([WorldCups].self, from:jsonData)
+            worldCups = try JSONDecoder().decode([WorldCup].self, from:jsonData)
         } catch {
             print(error.localizedDescription)
         }
@@ -49,8 +49,10 @@ class WinnersTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
-        // Configure the cell...
-
+        let worldCup = worldCups[indexPath.row]
+        cell.textLabel?.text = "Copa \(worldCup.year) - \(worldCup.country)"
+        cell.detailTextLabel?.text = "\(worldCup.winner) vs \(worldCup.vice)"
+        
         return cell
     }
 
