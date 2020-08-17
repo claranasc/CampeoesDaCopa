@@ -9,16 +9,25 @@
 import UIKit
 
 class WinnersTableViewController: UITableViewController {
+    
+    var worldCups: [WorldCup] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        loadWorldCups ()
     }
+
+    func loadWorldCups() {
+        let fileURL = Bundle.main.url(forResource: "winners.json", withExtension: nil)!
+        let jsonData = try! Data(contentsOf: fileURL)
+        do {
+            worldCups = try JSONDecoder().decode([WorldCups].self, from:jsonData)
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+    
+        
 
     // MARK: - Table view data source
 
