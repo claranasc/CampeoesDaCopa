@@ -21,7 +21,7 @@ class WinnersTableViewController: UITableViewController {
         let fileURL = Bundle.main.url(forResource: "winners.json", withExtension: nil)!
         let jsonData = try! Data(contentsOf: fileURL)
         do {
-            worldCups = try JSONDecoder().decode([WorldCup].self, from:jsonData)
+            worldCups = try JSONDecoder().decode([WorldCup].self, from: jsonData)
         } catch {
             print(error.localizedDescription)
         }
@@ -52,6 +52,7 @@ class WinnersTableViewController: UITableViewController {
         let worldCup = worldCups[indexPath.row]
         cell.textLabel?.text = "Copa \(worldCup.year) - \(worldCup.country)"
         cell.detailTextLabel?.text = "\(worldCup.winner) vs \(worldCup.vice)"
+        cell.imageView?.image = UIImage(named: "\(worldCup.winner).png")
         
         return cell
     }
