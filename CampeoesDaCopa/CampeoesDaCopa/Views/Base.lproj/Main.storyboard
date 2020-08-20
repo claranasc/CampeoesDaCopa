@@ -162,7 +162,7 @@
             <objects>
                 <navigationController id="RLs-UW-9wU" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="szx-mI-YFS">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="104.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -228,11 +228,30 @@
                                     <constraint firstAttribute="height" constant="2" id="BQQ-bP-EPq"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1a4-eD-ufB">
+                                <rect key="frame" x="0.0" y="304.5" width="414" height="557.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="pS2-nw-Ry5">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pS2-nw-Ry5" id="hmq-cl-6ok">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="4DL-k2-jay" id="VXy-Xz-DaE"/>
+                                    <outlet property="delegate" destination="4DL-k2-jay" id="Xva-9v-yIz"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="zkf-6C-nAu" firstAttribute="top" secondItem="8uJ-Mc-xJc" secondAttribute="bottom" constant="60" id="2uM-aT-1Qa"/>
                             <constraint firstItem="Q3H-z8-Zb4" firstAttribute="top" secondItem="8D6-uD-8WT" secondAttribute="top" constant="20" id="2x7-DE-VTq"/>
+                            <constraint firstItem="1a4-eD-ufB" firstAttribute="leading" secondItem="8D6-uD-8WT" secondAttribute="leading" id="4PC-CV-bkM"/>
                             <constraint firstAttribute="trailing" secondItem="K0e-uW-ZIv" secondAttribute="trailing" id="DHN-xn-q4j"/>
                             <constraint firstItem="2H6-vq-Mge" firstAttribute="top" secondItem="EBG-OY-C9j" secondAttribute="bottom" constant="8" id="EWs-JU-lyT"/>
                             <constraint firstItem="zkf-6C-nAu" firstAttribute="centerX" secondItem="8Ej-1k-FA7" secondAttribute="centerX" id="Ehc-9X-Z4u"/>
@@ -241,9 +260,12 @@
                             <constraint firstItem="8D6-uD-8WT" firstAttribute="trailing" secondItem="Q3H-z8-Zb4" secondAttribute="trailing" constant="20" id="MHv-oq-NG7"/>
                             <constraint firstItem="Q3H-z8-Zb4" firstAttribute="leading" secondItem="8uJ-Mc-xJc" secondAttribute="trailing" constant="16" id="PVJ-LX-Cmb"/>
                             <constraint firstItem="hMm-OX-ZLv" firstAttribute="centerX" secondItem="Q3H-z8-Zb4" secondAttribute="centerX" id="Y71-c4-5OY"/>
+                            <constraint firstItem="1a4-eD-ufB" firstAttribute="top" secondItem="K0e-uW-ZIv" secondAttribute="bottom" constant="4" id="aan-vS-6zr"/>
+                            <constraint firstItem="1a4-eD-ufB" firstAttribute="trailing" secondItem="8D6-uD-8WT" secondAttribute="trailing" id="i6G-Ie-z9w"/>
                             <constraint firstItem="K0e-uW-ZIv" firstAttribute="top" secondItem="zkf-6C-nAu" secondAttribute="bottom" constant="8" id="jgP-Gl-NZY"/>
                             <constraint firstItem="K0e-uW-ZIv" firstAttribute="leading" secondItem="8Ej-1k-FA7" secondAttribute="leading" id="mds-ub-bDD"/>
                             <constraint firstItem="EBG-OY-C9j" firstAttribute="leading" secondItem="8D6-uD-8WT" secondAttribute="leading" constant="20" id="ov7-ac-2Kt"/>
+                            <constraint firstItem="1a4-eD-ufB" firstAttribute="bottom" secondItem="8D6-uD-8WT" secondAttribute="bottom" id="sWO-AZ-wU3"/>
                             <constraint firstItem="hMm-OX-ZLv" firstAttribute="top" secondItem="Q3H-z8-Zb4" secondAttribute="bottom" constant="8" id="si2-gp-Ih6"/>
                             <constraint firstItem="8uJ-Mc-xJc" firstAttribute="centerY" secondItem="EBG-OY-C9j" secondAttribute="centerY" id="uUq-OF-Jf4"/>
                             <constraint firstItem="EBG-OY-C9j" firstAttribute="top" secondItem="8D6-uD-8WT" secondAttribute="top" constant="20" id="ukz-Xs-dUe"/>
@@ -257,6 +279,7 @@
                         <outlet property="lbScore" destination="8uJ-Mc-xJc" id="sen-M6-eqW"/>
                         <outlet property="lbVice" destination="hMm-OX-ZLv" id="5hT-zz-7ye"/>
                         <outlet property="lbWinner" destination="2H6-vq-Mge" id="mGL-k5-9LP"/>
+                        <outlet property="tableview" destination="pS2-nw-Ry5" id="QnM-bW-Tyv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pg7-pQ-nbJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
