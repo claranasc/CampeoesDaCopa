@@ -323,17 +323,17 @@
                     </view>
                     <navigationItem key="navigationItem" title="Title" largeTitleDisplayMode="always" id="d5a-o4-Y99"/>
                     <connections>
-                        <outlet property="ivVIce" destination="Q3H-z8-Zb4" id="eKh-Dx-253"/>
+                        <outlet property="ivVice" destination="Q3H-z8-Zb4" id="pfE-mi-Pzd"/>
                         <outlet property="ivWinner" destination="EBG-OY-C9j" id="aVr-6i-3Xe"/>
                         <outlet property="lbScore" destination="8uJ-Mc-xJc" id="sen-M6-eqW"/>
                         <outlet property="lbVice" destination="hMm-OX-ZLv" id="5hT-zz-7ye"/>
                         <outlet property="lbWinner" destination="2H6-vq-Mge" id="mGL-k5-9LP"/>
-                        <outlet property="tableview" destination="pS2-nw-Ry5" id="QnM-bW-Tyv"/>
+                        <outlet property="tableview" destination="1a4-eD-ufB" id="5W5-s7-ToY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pg7-pQ-nbJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="550.72463768115949" y="75"/>
+            <point key="canvasLocation" x="549" y="75"/>
         </scene>
     </scenes>
     <resources>

@@ -17,7 +17,7 @@ class WorldCupViewController: UIViewController {
     @IBOutlet weak var lbScore: UILabel!
     @IBOutlet weak var lbWinner: UILabel!
     @IBOutlet weak var lbVice: UILabel!
-    @IBOutlet weak var tableview: UITableViewCell!
+    @IBOutlet weak var tableview: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
