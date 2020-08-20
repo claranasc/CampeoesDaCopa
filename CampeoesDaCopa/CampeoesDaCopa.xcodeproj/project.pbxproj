@@ -123,7 +123,7 @@
 		25385E1624EB2CCB004758E1 /* WinnersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnersTableViewController.swift; sourceTree = "<group>"; };
 		25385E1A24EB2D30004758E1 /* WorldCupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCupViewController.swift; sourceTree = "<group>"; };
 		25385E1C24EB2DFD004758E1 /* WorldCup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCup.swift; sourceTree = "<group>"; };
-		25ED994424E4C72A003FA1D1 /* CampeoesDaCopa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampeoesDaCopa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25ED994424E4C72A003FA1D1 /* Campeões.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Campeões.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25ED994724E4C72A003FA1D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25ED994924E4C72A003FA1D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		25ED994E24E4C72A003FA1D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -238,7 +238,7 @@
 		25ED994524E4C72A003FA1D1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				25ED994424E4C72A003FA1D1 /* CampeoesDaCopa.app */,
+				25ED994424E4C72A003FA1D1 /* Campeões.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -275,7 +275,7 @@
 			);
 			name = CampeoesDaCopa;
 			productName = CampeoesDaCopa;
-			productReference = 25ED994424E4C72A003FA1D1 /* CampeoesDaCopa.app */;
+			productReference = 25ED994424E4C72A003FA1D1 /* Campeões.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -536,7 +536,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.claranascimento.CampeoesDaCopa;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Campeões";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -554,7 +554,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.claranascimento.CampeoesDaCopa;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Campeões";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
