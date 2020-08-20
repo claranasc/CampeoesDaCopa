@@ -30,5 +30,16 @@ class WorldCupTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func prepare(with cup: WorldCup) {
+        lbYear.text = "\(cup.year)"
+        ivWinner.image = UIImage(named: cup.winner)
+        ivVice.image = UIImage(named: cup.vice)
+        lbWinner.text = cup.winner
+        lbVice.text = cup.vice
+        lbCountry.text = cup.country
+        lbWinnerScore.text = cup.winnerScore
+        lbViceScore.text = cup.viceScore
+    }
 
 }
