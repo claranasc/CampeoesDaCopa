@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		250F335724EF0A3C009712B1 /* WorldCupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250F335624EF0A3C009712B1 /* WorldCupTableViewCell.swift */; };
 		25385DE124EB29DB004758E1 /* Tchecoslováquia.png in Resources */ = {isa = PBXBuildFile; fileRef = 25385DB024EB29CE004758E1 /* Tchecoslováquia.png */; };
 		25385DE224EB29DB004758E1 /* Alemanha Oriental.png in Resources */ = {isa = PBXBuildFile; fileRef = 25385DB124EB29CE004758E1 /* Alemanha Oriental.png */; };
 		25385DE324EB29DB004758E1 /* Colômbia.png in Resources */ = {isa = PBXBuildFile; fileRef = 25385DB224EB29CE004758E1 /* Colômbia.png */; };
@@ -68,6 +69,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		250F335624EF0A3C009712B1 /* WorldCupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCupTableViewCell.swift; sourceTree = "<group>"; };
 		25385DB024EB29CE004758E1 /* Tchecoslováquia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Tchecoslováquia.png"; path = "../Tchecoslováquia.png"; sourceTree = "<group>"; };
 		25385DB124EB29CE004758E1 /* Alemanha Oriental.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Alemanha Oriental.png"; sourceTree = "<group>"; };
 		25385DB224EB29CE004758E1 /* Colômbia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Colômbia.png"; path = "../Colômbia.png"; sourceTree = "<group>"; };
@@ -212,6 +214,7 @@
 			children = (
 				25385E1624EB2CCB004758E1 /* WinnersTableViewController.swift */,
 				25385E1A24EB2D30004758E1 /* WorldCupViewController.swift */,
+				250F335624EF0A3C009712B1 /* WorldCupTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				25385E1724EB2CCB004758E1 /* WinnersTableViewController.swift in Sources */,
 				25ED994824E4C72A003FA1D1 /* AppDelegate.swift in Sources */,
 				25385E1D24EB2DFD004758E1 /* WorldCup.swift in Sources */,
+				250F335724EF0A3C009712B1 /* WorldCupTableViewCell.swift in Sources */,
 				25385E1B24EB2D30004758E1 /* WorldCupViewController.swift in Sources */,
 				25ED994A24E4C72A003FA1D1 /* SceneDelegate.swift in Sources */,
 			);

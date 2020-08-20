@@ -32,7 +32,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="144" id="zUN-4g-ivA">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="144" id="zUN-4g-ivA" customClass="WorldCupTableViewCell" customModule="CampeoesDaCopa" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="166" width="414" height="144"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zUN-4g-ivA" id="JYx-dR-mTu">
@@ -132,6 +132,16 @@
                                         <constraint firstItem="kNe-l4-UP2" firstAttribute="leading" secondItem="J6r-r9-uaf" secondAttribute="trailing" constant="10" id="ux1-u9-qz8"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ivVice" destination="J6r-r9-uaf" id="o0n-4W-CVD"/>
+                                    <outlet property="ivWinner" destination="A8e-LK-c6I" id="JT3-qW-2tf"/>
+                                    <outlet property="lbCountry" destination="eBU-B5-QLs" id="UTQ-ed-XAE"/>
+                                    <outlet property="lbVice" destination="kNe-l4-UP2" id="5Ok-Wb-RnF"/>
+                                    <outlet property="lbViceScore" destination="Q9s-ud-gOg" id="EZC-Jx-Qgx"/>
+                                    <outlet property="lbWinner" destination="PEM-F5-zJb" id="jV2-dm-OJg"/>
+                                    <outlet property="lbWinnerScore" destination="c1A-XA-WLh" id="wki-jH-BgZ"/>
+                                    <outlet property="lbYear" destination="nO7-xm-aLJ" id="B7c-sX-0rW"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
