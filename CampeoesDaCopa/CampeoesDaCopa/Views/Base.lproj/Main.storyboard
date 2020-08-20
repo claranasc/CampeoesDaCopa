@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Campeões-->
         <scene sceneID="nXU-eS-WXy">
             <objects>
                 <tableViewController id="vSo-fd-E6P" customClass="WinnersTableViewController" customModule="CampeoesDaCopa" customModuleProvider="target" sceneMemberID="viewController">
@@ -141,6 +141,7 @@
                                     <outlet property="lbWinner" destination="PEM-F5-zJb" id="jV2-dm-OJg"/>
                                     <outlet property="lbWinnerScore" destination="c1A-XA-WLh" id="wki-jH-BgZ"/>
                                     <outlet property="lbYear" destination="nO7-xm-aLJ" id="B7c-sX-0rW"/>
+                                    <segue destination="4DL-k2-jay" kind="show" id="Cs0-5R-naX"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -150,7 +151,7 @@
                             <outlet property="delegate" destination="vSo-fd-E6P" id="AcK-Ej-jul"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="yqM-lb-VYM"/>
+                    <navigationItem key="navigationItem" title="Campeões" id="yqM-lb-VYM"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jba-tc-bSg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -182,6 +183,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="8D6-uD-8WT"/>
                     </view>
+                    <navigationItem key="navigationItem" id="sB9-qK-eaC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pg7-pQ-nbJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
