@@ -162,7 +162,7 @@
             <objects>
                 <navigationController id="RLs-UW-9wU" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="szx-mI-YFS">
-                        <rect key="frame" x="0.0" y="44" width="414" height="104.5"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -200,7 +200,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 x 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uJ-Mc-xJc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 x 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="8uJ-Mc-xJc">
                                 <rect key="frame" x="120" y="180.5" width="174" height="34"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <nil key="textColor"/>
@@ -251,6 +251,13 @@
                         <viewLayoutGuide key="safeArea" id="8D6-uD-8WT"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" largeTitleDisplayMode="always" id="d5a-o4-Y99"/>
+                    <connections>
+                        <outlet property="ivVIce" destination="Q3H-z8-Zb4" id="eKh-Dx-253"/>
+                        <outlet property="ivWinner" destination="EBG-OY-C9j" id="aVr-6i-3Xe"/>
+                        <outlet property="lbScore" destination="8uJ-Mc-xJc" id="sen-M6-eqW"/>
+                        <outlet property="lbVice" destination="hMm-OX-ZLv" id="5hT-zz-7ye"/>
+                        <outlet property="lbWinner" destination="2H6-vq-Mge" id="mGL-k5-9LP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pg7-pQ-nbJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
