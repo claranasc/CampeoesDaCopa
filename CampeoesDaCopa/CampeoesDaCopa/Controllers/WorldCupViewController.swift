@@ -48,6 +48,12 @@ extension WorldCupViewController: UITableViewDataSource {
         cell.prepare(with: game)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let match = worldCup.matches[section]
+        return match.stage
+    }
+
 }
 
 extension WorldCupViewController: UITableViewDelegate {
