@@ -10,7 +10,7 @@
         <!--Campeões-->
         <scene sceneID="nXU-eS-WXy">
             <objects>
-                <tableViewController id="vSo-fd-E6P" customClass="WinnersTableViewController" customModule="CampeoesDaCopa" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="vSo-fd-E6P" customClass="WinnersTableViewController" customModule="Campeões" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="PAe-eF-BI9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,7 +32,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="144" id="zUN-4g-ivA" customClass="WorldCupTableViewCell" customModule="CampeoesDaCopa" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="144" id="zUN-4g-ivA" customClass="WorldCupTableViewCell" customModule="Campeões" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="166" width="414" height="144"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zUN-4g-ivA" id="JYx-dR-mTu">
@@ -176,7 +176,7 @@
         <!--Title-->
         <scene sceneID="T9U-qo-uiM">
             <objects>
-                <viewController id="4DL-k2-jay" customClass="WorldCupViewController" customModule="CampeoesDaCopa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4DL-k2-jay" customClass="WorldCupViewController" customModule="Campeões" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8Ej-1k-FA7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -232,7 +232,7 @@
                                 <rect key="frame" x="0.0" y="304.5" width="414" height="557.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="pS2-nw-Ry5">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="pS2-nw-Ry5" customClass="GamesTableViewCell" customModule="Campeões" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pS2-nw-Ry5" id="hmq-cl-6ok">
@@ -277,17 +277,24 @@
                                                 <constraint firstItem="lyc-yU-YRA" firstAttribute="centerY" secondItem="hmq-cl-6ok" secondAttribute="centerY" id="1Hq-gT-H99"/>
                                                 <constraint firstItem="ERh-3e-2Ma" firstAttribute="top" secondItem="hmq-cl-6ok" secondAttribute="top" constant="5" id="59q-Fs-syK"/>
                                                 <constraint firstItem="lyc-yU-YRA" firstAttribute="centerY" secondItem="hmq-cl-6ok" secondAttribute="centerY" id="7yS-bf-h5O"/>
-                                                <constraint firstItem="y4p-0Y-R6K" firstAttribute="centerX" secondItem="hmq-cl-6ok" secondAttribute="centerX" id="82Z-1s-Owu"/>
-                                                <constraint firstItem="y4p-0Y-R6K" firstAttribute="centerY" secondItem="hmq-cl-6ok" secondAttribute="centerY" id="CK0-bD-Rb6"/>
                                                 <constraint firstItem="B4z-0l-1Gl" firstAttribute="centerY" secondItem="hmq-cl-6ok" secondAttribute="centerY" id="Ha1-Pf-zQf"/>
+                                                <constraint firstItem="y4p-0Y-R6K" firstAttribute="leading" secondItem="lyc-yU-YRA" secondAttribute="trailing" constant="8" id="Qu6-40-weq"/>
+                                                <constraint firstItem="y4p-0Y-R6K" firstAttribute="centerY" secondItem="hmq-cl-6ok" secondAttribute="centerY" id="Rck-Lk-evc"/>
                                                 <constraint firstItem="lyc-yU-YRA" firstAttribute="leading" secondItem="ERh-3e-2Ma" secondAttribute="trailing" constant="8" id="h8s-ER-fwN"/>
-                                                <constraint firstItem="B4z-0l-1Gl" firstAttribute="leading" secondItem="y4p-0Y-R6K" secondAttribute="trailing" constant="8" id="kTH-g0-yVr"/>
+                                                <constraint firstItem="B4z-0l-1Gl" firstAttribute="leading" secondItem="y4p-0Y-R6K" secondAttribute="trailing" constant="8" id="kIc-5d-6oR"/>
                                                 <constraint firstItem="ERh-3e-2Ma" firstAttribute="leading" secondItem="hmq-cl-6ok" secondAttribute="leading" constant="16" id="laS-KA-wws"/>
                                                 <constraint firstItem="hxc-Cq-yoc" firstAttribute="top" secondItem="hmq-cl-6ok" secondAttribute="top" constant="6" id="qhR-jI-c8R"/>
                                                 <constraint firstAttribute="trailing" secondItem="hxc-Cq-yoc" secondAttribute="trailing" constant="16" id="qr1-rx-jpL"/>
-                                                <constraint firstItem="y4p-0Y-R6K" firstAttribute="leading" secondItem="lyc-yU-YRA" secondAttribute="trailing" constant="8" id="y6M-cs-cvy"/>
+                                                <constraint firstItem="y4p-0Y-R6K" firstAttribute="centerX" secondItem="hmq-cl-6ok" secondAttribute="centerX" id="uJ3-xq-QP7"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="ivAway" destination="hxc-Cq-yoc" id="M6K-NR-qxV"/>
+                                            <outlet property="ivHome" destination="ERh-3e-2Ma" id="URT-oj-Sie"/>
+                                            <outlet property="lbAway" destination="B4z-0l-1Gl" id="b2c-kE-r28"/>
+                                            <outlet property="lbHome" destination="lyc-yU-YRA" id="9UH-Xp-llA"/>
+                                            <outlet property="lbScore" destination="y4p-0Y-R6K" id="h9r-fk-M3V"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
